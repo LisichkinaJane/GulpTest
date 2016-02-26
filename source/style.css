@@ -1,0 +1,79 @@
+html, body, .container {
+	height: 100%;
+}
+
+.js .boxgallery,
+.js .boxgallery div {
+	position: absolute;
+}
+
+.js .boxgallery,
+.bg-tile,
+.bg-img {
+	overflow: hidden;
+}
+
+.js .boxgallery,
+.js .panel {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.panel {
+	z-index: 0;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.bg-tile {
+	width: 50%;
+	height: 50%;
+}
+
+.bg-tile:nth-child(2),
+.bg-tile:nth-child(4) {
+	left: 50%;
+}
+
+.bg-tile:nth-child(3),
+.bg-tile:nth-child(4) {
+	top: 50%;
+}
+
+.bg-img {
+	width: 100%;
+	height: 100%;
+	background: #999;
+}
+
+.bg-img img {
+	position: absolute;
+	display: block;
+	height: 200%;
+}
+.slider-my-custome{
+    width: 550px;
+    height: 300px;
+    top:255px;
+    left: 500px;
+    position: absolute;
+}
+
+@media screen and (min-aspect-ratio: 1280/850) {
+	.bg-img img {
+		width: 200%;
+		height: auto;
+	}
+}
+
+.bg-tile:nth-child(2) .bg-img img,
+.bg-tile:nth-child(4) .bg-img img {
+	left: -100%;
+}
+
+.bg-tile:nth-child(3) .bg-img img,
+.bg-tile:nth-child(4) .bg-img img {
+	top: -100%;
+}
